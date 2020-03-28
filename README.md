@@ -15,4 +15,4 @@ You will also see any lint errors in the console.
 
 ### Deployment
 
-https://vigorous-khorana-90db6c.netlify.com/
+https://weather-app-renann.netlify.com
