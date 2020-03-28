@@ -48,7 +48,7 @@ function Main() {
           <li>Temperatura máxima: {weather['main']['temp_max']}°</li>
           <li>Temperatura minima: {weather['main']['temp_min']}°</li>
           <li>Pressão: {weather['main']['pressure']} hpa</li>
-          <li>Humidade: {weather['main']['humidity']}%</li>
+          <li>Umidade: {weather['main']['humidity']}%</li>
         </ul>
       </Fragment>
     );
