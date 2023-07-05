@@ -26,13 +26,13 @@ function Main() {
     })
   }, [])
   
-  if (location == false) {
+  if (location === false) {
     return (
       <div className='center'>
         Você precisa habilitar a localização no browser!!!
       </div>
     )
-  } else if (weather == false) {
+  } else if (weather === false) {
     return (
       <div className='center'>
         Carregando o clima...
