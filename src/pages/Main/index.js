@@ -28,29 +28,28 @@ function Main() {
   
   if (location == false) {
     return (
-      <Fragment>
+      <div className='center'>
         Você precisa habilitar a localização no browser!!!
-      </Fragment>
+      </div>
     )
   } else if (weather == false) {
     return (
-      <Fragment>
+      <div className='center'>
         Carregando o clima...
-      </Fragment>
+      </div>
     )
   } else {
     return (
-      <Fragment>
-        <h3>Clima nas suas Coordenadas ({weather['weather'][0]['description']})</h3>
-        <hr/>
-        <ul>
+      <div className='center'>
+        <h2>Clima nas suas Coordenadas: {weather['weather'][0]['description']}</h2>
+        <ul className="lista">
           <li>Temperatura atual: {weather['main']['temp']}°</li>
           <li>Temperatura máxima: {weather['main']['temp_max']}°</li>
           <li>Temperatura minima: {weather['main']['temp_min']}°</li>
           <li>Pressão: {weather['main']['pressure']} hpa</li>
           <li>Umidade: {weather['main']['humidity']}%</li>
         </ul>
-      </Fragment>
+      </div>
     );
   }
 }
